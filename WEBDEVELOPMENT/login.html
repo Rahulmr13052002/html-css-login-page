@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login forms</title>
+    <style>
+        #background-video {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+        opacity:2 ;
+        
+            }
+        .loginbox{
+            background-color: transparent;
+            border: 1px solid white ;
+            display: flex;
+            flex-direction: column;
+            padding: 4rem;
+            margin-top: 1rem;
+            margin-left: 27rem;
+            width: 20rem;
+            height:23rem ;
+            border-radius: 15px;
+            
+
+            }
+            .loginbox:hover{
+                box-shadow: 0px 0px 10px 7px white;
+                background-color: rgb(44, 73, 73);
+            }
+            .inputbox{
+                margin: 3rem 1rem 1rem 1rem;
+                background-color: transparent;
+                border: 1px solid white;
+                border-radius: 15px;
+                padding: 8px;
+                color: rgb(5, 5, 5);
+                font-weight: bold;
+            }
+            .inputbox:hover{
+                border: 1px solid black;
+                box-shadow: 0px 0px 10px 7px rgb(175, 151, 151);
+                background-color:burlywood;
+                color: rgb(85, 33, 33);
+                font-weight: bold;
+            }
+           
+            .heading{
+                border: 1px solid transparent;
+                width: 15rem;
+                height: 4rem;
+                text-align: center;
+                margin-left: 33rem;
+                border-radius: 25px;
+                box-shadow: 0px 0px 15px 7px white;
+                color: rgb(82, 9, 76);
+            }
+            .btns
+            {
+                display: flex;
+                flex-direction: row;
+            }
+            .backbtn{
+                line-height: 1px;
+                margin-left: 25px;
+                margin-top: 2rem;
+            }
+    </style>
+</head>
+<body>
+    <!-- body page -->
+    <div>
+        <!-- video  -->
+        <video id="background-video" autoplay loop muted >
+            <source src="background.mp4" type="video/mp4">
+        </video>
+        <div class="heading"><h1>login form</h1></div>
+        <!-- login form -->
+        <div class="loginbox">
+            <input class="inputbox" type="text" placeholder="enter your name" required>
+            <input  class="inputbox" type="email" placeholder="enter your email" pattern="abc@gmail" required>
+            <input  class="inputbox" type="password" name="pass" id="pass" placeholder="enter your password" required>
+            <div class="btns">
+            
+            <button  class="inputbox" type="reset">clear</button>
+            <button  class="inputbox" type="submit">login</button>
+            
+            <div class="backbtn">
+                <h6 style="color: red;">If you register ?</h6>
+                <b style="margin-top: 3.5rem;"> <a href="register.html"> register now</a></b>
+               
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

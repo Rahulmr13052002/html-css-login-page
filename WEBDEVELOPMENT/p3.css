@@ -1,0 +1,35 @@
+patients{
+    background-color: burlywood;
+    border: 20px;
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 65px; */
+
+}
+
+
+
+name{
+    text-align: center;
+    color: blue ;
+    line-break: auto;
+}
+bio{
+    color:red;
+}
+patient{
+    display: flex;
+    border: 2px solid black;
+    border-radius: 12px;
+    border-color: blueviolet;
+    flex-direction: column;
+   
+}
+
+
+div1{
+    color: darkgreen;
+}
+div2{
+    color: darkmagenta;
+}
